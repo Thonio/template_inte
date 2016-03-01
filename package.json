@@ -1,0 +1,25 @@
+{
+  "name": "template_inte",
+  "version": "1.0.0",
+  "description": "Template for SCSS based on gulp and bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thonio/template_inte.git"
+  },
+  "author": "ThonioNJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thonio/template_inte/issues"
+  },
+  "homepage": "https://github.com/Thonio/template_inte#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
