@@ -1,5 +1,5 @@
 {
-  "name": "template_inte",
+  "name": "template",
   "version": "1.0.0",
   "description": "Template for SCSS based on gulp and bootstrap",
   "main": "index.js",
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Thonio/template_inte#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3"

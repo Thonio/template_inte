@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass');
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
+    rename = require('gulp-rename'),
     uglify = require('gulp-uglify');
 
 /* For SASS */
@@ -20,11 +21,10 @@ gulp.task('sass', function () {
 /* For UGLIFY minify JS */
 gulp.task('uglify', function () {
 
-    gulp.src(htmlPath + 'js/*.js')
-        .pipe(plumber())
+    gulp.src('js/*.js')
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(htmlPath + 'js/min/'))
+        .pipe(gulp.dest('js/min/'))
 
 });
 
@@ -32,4 +32,4 @@ gulp.task('uglify', function () {
  * Compilation des codes et lancement du server *
  ************************************************/
 
-gulp.task('compil', ['sass', 'uglify'])
+gulp.task('default', ['sass', 'uglify']);
