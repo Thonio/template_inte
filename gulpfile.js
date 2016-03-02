@@ -12,9 +12,9 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
-        .pipe(gulp.dest('/css'))
+        .pipe(gulp.dest('css'))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('/css'))
+        .pipe(gulp.dest('css'))
 
 });
 
